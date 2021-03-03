@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		76395B5C25EF550B0043942F /* SessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76395B5925EF550B0043942F /* SessionView.swift */; };
+		76395B5D25EF550B0043942F /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76395B5B25EF550B0043942F /* SignUpView.swift */; };
+		76395B5E25EF550B0043942F /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76395B5725EF550A0043942F /* SessionManager.swift */; };
+		76395B5F25EF550B0043942F /* ConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76395B5825EF550A0043942F /* ConfirmationView.swift */; };
+		76395B6025EF550B0043942F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76395B5A25EF550B0043942F /* LoginView.swift */; };
+		76395B6525EF56A30043942F /* PrettyModifierExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76395B6425EF56A30043942F /* PrettyModifierExtensions.swift */; };
+		76B9950B25EF4D420072ACE8 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 76B9950925EF4D420072ACE8 /* amplifyconfiguration.json */; };
+		76B9950C25EF4D420072ACE8 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 76B9950A25EF4D420072ACE8 /* awsconfiguration.json */; };
+		76DEE61625EF36AD003FC6C8 /* traveldealsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DEE61525EF36AD003FC6C8 /* traveldealsApp.swift */; };
+		76DEE61825EF36AD003FC6C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DEE61725EF36AD003FC6C8 /* ContentView.swift */; };
+		76DEE61A25EF36B1003FC6C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76DEE61925EF36B1003FC6C8 /* Assets.xcassets */; };
+		76DEE61D25EF36B1003FC6C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76DEE61C25EF36B1003FC6C8 /* Preview Assets.xcassets */; };
+		76EA927C25EF78B40099E42B /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EA927925EF78B40099E42B /* AmplifyModels.swift */; };
+		76EA927D25EF78B40099E42B /* Deal+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EA927A25EF78B40099E42B /* Deal+Schema.swift */; };
+		76EA927E25EF78B40099E42B /* Deal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EA927B25EF78B40099E42B /* Deal.swift */; };
+		B4F685355A68728AD89A80C0 /* Pods_traveldeals.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 326404F3552A03CBA96D73B1 /* Pods_traveldeals.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		185140267F3AC3D1E3051DA1 /* Pods-traveldeals.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-traveldeals.release.xcconfig"; path = "Target Support Files/Pods-traveldeals/Pods-traveldeals.release.xcconfig"; sourceTree = "<group>"; };
+		2993BEEF19AB66BAFFD066F3 /* Pods-traveldeals.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-traveldeals.debug.xcconfig"; path = "Target Support Files/Pods-traveldeals/Pods-traveldeals.debug.xcconfig"; sourceTree = "<group>"; };
+		326404F3552A03CBA96D73B1 /* Pods_traveldeals.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_traveldeals.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76395B5725EF550A0043942F /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		76395B5825EF550A0043942F /* ConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationView.swift; sourceTree = "<group>"; };
+		76395B5925EF550B0043942F /* SessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionView.swift; sourceTree = "<group>"; };
+		76395B5A25EF550B0043942F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		76395B5B25EF550B0043942F /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		76395B6425EF56A30043942F /* PrettyModifierExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrettyModifierExtensions.swift; sourceTree = "<group>"; };
+		76B9950925EF4D420072ACE8 /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = SOURCE_ROOT; };
+		76B9950A25EF4D420072ACE8 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = SOURCE_ROOT; };
+		76DEE61225EF36AD003FC6C8 /* traveldeals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = traveldeals.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		76DEE61525EF36AD003FC6C8 /* traveldealsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = traveldealsApp.swift; sourceTree = "<group>"; };
+		76DEE61725EF36AD003FC6C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		76DEE61925EF36B1003FC6C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		76DEE61C25EF36B1003FC6C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		76DEE61E25EF36B1003FC6C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76EA927925EF78B40099E42B /* AmplifyModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmplifyModels.swift; sourceTree = "<group>"; };
+		76EA927A25EF78B40099E42B /* Deal+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Deal+Schema.swift"; sourceTree = "<group>"; };
+		76EA927B25EF78B40099E42B /* Deal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deal.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		76DEE60F25EF36AD003FC6C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4F685355A68728AD89A80C0 /* Pods_traveldeals.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29FB4BD6DF855ECB9222163E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				326404F3552A03CBA96D73B1 /* Pods_traveldeals.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76DEE60925EF36AD003FC6C8 = {
+			isa = PBXGroup;
+			children = (
+				76DEE61425EF36AD003FC6C8 /* traveldeals */,
+				76DEE61325EF36AD003FC6C8 /* Products */,
+				C081016FDDFFAAD839D58EB1 /* Pods */,
+				29FB4BD6DF855ECB9222163E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		76DEE61325EF36AD003FC6C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76DEE61225EF36AD003FC6C8 /* traveldeals.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		76DEE61425EF36AD003FC6C8 /* traveldeals */ = {
+			isa = PBXGroup;
+			children = (
+				76EA927825EF78B40099E42B /* models */,
+				76B9950925EF4D420072ACE8 /* amplifyconfiguration.json */,
+				76B9950A25EF4D420072ACE8 /* awsconfiguration.json */,
+				76DEE61525EF36AD003FC6C8 /* traveldealsApp.swift */,
+				76DEE61725EF36AD003FC6C8 /* ContentView.swift */,
+				76395B5825EF550A0043942F /* ConfirmationView.swift */,
+				76395B5A25EF550B0043942F /* LoginView.swift */,
+				76395B5725EF550A0043942F /* SessionManager.swift */,
+				76395B5925EF550B0043942F /* SessionView.swift */,
+				76395B5B25EF550B0043942F /* SignUpView.swift */,
+				76395B6425EF56A30043942F /* PrettyModifierExtensions.swift */,
+				76DEE61925EF36B1003FC6C8 /* Assets.xcassets */,
+				76DEE61E25EF36B1003FC6C8 /* Info.plist */,
+				76DEE61B25EF36B1003FC6C8 /* Preview Content */,
+			);
+			path = traveldeals;
+			sourceTree = "<group>";
+		};
+		76DEE61B25EF36B1003FC6C8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				76DEE61C25EF36B1003FC6C8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		76EA927825EF78B40099E42B /* models */ = {
+			isa = PBXGroup;
+			children = (
+				76EA927925EF78B40099E42B /* AmplifyModels.swift */,
+				76EA927A25EF78B40099E42B /* Deal+Schema.swift */,
+				76EA927B25EF78B40099E42B /* Deal.swift */,
+			);
+			name = models;
+			path = amplify/generated/models;
+			sourceTree = SOURCE_ROOT;
+		};
+		C081016FDDFFAAD839D58EB1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2993BEEF19AB66BAFFD066F3 /* Pods-traveldeals.debug.xcconfig */,
+				185140267F3AC3D1E3051DA1 /* Pods-traveldeals.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		76DEE61125EF36AD003FC6C8 /* traveldeals */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76DEE62125EF36B1003FC6C8 /* Build configuration list for PBXNativeTarget "traveldeals" */;
+			buildPhases = (
+				5B834351BBE490D913802DC0 /* [CP] Check Pods Manifest.lock */,
+				76DEE60E25EF36AD003FC6C8 /* Sources */,
+				76DEE60F25EF36AD003FC6C8 /* Frameworks */,
+				76DEE61025EF36AD003FC6C8 /* Resources */,
+				38F36B2999FEA38510A30997 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = traveldeals;
+			productName = traveldeals;
+			productReference = 76DEE61225EF36AD003FC6C8 /* traveldeals.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		76DEE60A25EF36AD003FC6C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					76DEE61125EF36AD003FC6C8 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 76DEE60D25EF36AD003FC6C8 /* Build configuration list for PBXProject "traveldeals" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 76DEE60925EF36AD003FC6C8;
+			productRefGroup = 76DEE61325EF36AD003FC6C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				76DEE61125EF36AD003FC6C8 /* traveldeals */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		76DEE61025EF36AD003FC6C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76B9950C25EF4D420072ACE8 /* awsconfiguration.json in Resources */,
+				76DEE61D25EF36B1003FC6C8 /* Preview Assets.xcassets in Resources */,
+				76B9950B25EF4D420072ACE8 /* amplifyconfiguration.json in Resources */,
+				76DEE61A25EF36B1003FC6C8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38F36B2999FEA38510A30997 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-traveldeals/Pods-traveldeals-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-traveldeals/Pods-traveldeals-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-traveldeals/Pods-traveldeals-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B834351BBE490D913802DC0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-traveldeals-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		76DEE60E25EF36AD003FC6C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76395B6525EF56A30043942F /* PrettyModifierExtensions.swift in Sources */,
+				76395B5D25EF550B0043942F /* SignUpView.swift in Sources */,
+				76EA927E25EF78B40099E42B /* Deal.swift in Sources */,
+				76395B6025EF550B0043942F /* LoginView.swift in Sources */,
+				76395B5F25EF550B0043942F /* ConfirmationView.swift in Sources */,
+				76EA927C25EF78B40099E42B /* AmplifyModels.swift in Sources */,
+				76DEE61825EF36AD003FC6C8 /* ContentView.swift in Sources */,
+				76EA927D25EF78B40099E42B /* Deal+Schema.swift in Sources */,
+				76395B5C25EF550B0043942F /* SessionView.swift in Sources */,
+				76395B5E25EF550B0043942F /* SessionManager.swift in Sources */,
+				76DEE61625EF36AD003FC6C8 /* traveldealsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		76DEE61F25EF36B1003FC6C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		76DEE62025EF36B1003FC6C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		76DEE62225EF36B1003FC6C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2993BEEF19AB66BAFFD066F3 /* Pods-traveldeals.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"traveldeals/Preview Content\"";
+				DEVELOPMENT_TEAM = C9FVQFAP43;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = traveldeals/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tfc.traveldeals;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		76DEE62325EF36B1003FC6C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 185140267F3AC3D1E3051DA1 /* Pods-traveldeals.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"traveldeals/Preview Content\"";
+				DEVELOPMENT_TEAM = C9FVQFAP43;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = traveldeals/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tfc.traveldeals;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		76DEE60D25EF36AD003FC6C8 /* Build configuration list for PBXProject "traveldeals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76DEE61F25EF36B1003FC6C8 /* Debug */,
+				76DEE62025EF36B1003FC6C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76DEE62125EF36B1003FC6C8 /* Build configuration list for PBXNativeTarget "traveldeals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76DEE62225EF36B1003FC6C8 /* Debug */,
+				76DEE62325EF36B1003FC6C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 76DEE60A25EF36AD003FC6C8 /* Project object */;
+}
