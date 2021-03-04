@@ -6,6 +6,7 @@ subscription OnCreateDeal {
     category
     createdAt
     updatedAt
+    owner
   }
 }
 subscription OnUpdateDeal {
@@ -15,6 +16,7 @@ subscription OnUpdateDeal {
     category
     createdAt
     updatedAt
+    owner
   }
 }
 subscription OnDeleteDeal {
@@ -24,5 +26,6 @@ subscription OnDeleteDeal {
     category
     createdAt
     updatedAt
+    owner
   }
 }

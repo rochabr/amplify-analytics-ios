@@ -9,6 +9,7 @@ mutation CreateDeal(
     category
     createdAt
     updatedAt
+    owner
   }
 }
 mutation UpdateDeal(
@@ -21,6 +22,7 @@ mutation UpdateDeal(
     category
     createdAt
     updatedAt
+    owner
   }
 }
 mutation DeleteDeal(
@@ -33,5 +35,6 @@ mutation DeleteDeal(
     category
     createdAt
     updatedAt
+    owner
   }
 }

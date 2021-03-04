@@ -6,6 +6,7 @@ query GetDeal($id: ID!) {
     category
     createdAt
     updatedAt
+    owner
   }
 }
 query ListDeals(
@@ -20,6 +21,7 @@ query ListDeals(
       category
       createdAt
       updatedAt
+      owner
     }
     nextToken
   }

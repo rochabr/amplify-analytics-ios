@@ -7,34 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E593A6FCE9044169738900D /* Deal+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3561A9C3598A4E4BBDCDBE29 /* Deal+Schema.swift */; };
 		76395B5C25EF550B0043942F /* SessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76395B5925EF550B0043942F /* SessionView.swift */; };
 		76395B5D25EF550B0043942F /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76395B5B25EF550B0043942F /* SignUpView.swift */; };
 		76395B5E25EF550B0043942F /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76395B5725EF550A0043942F /* SessionManager.swift */; };
 		76395B5F25EF550B0043942F /* ConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76395B5825EF550A0043942F /* ConfirmationView.swift */; };
 		76395B6025EF550B0043942F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76395B5A25EF550B0043942F /* LoginView.swift */; };
 		76395B6525EF56A30043942F /* PrettyModifierExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76395B6425EF56A30043942F /* PrettyModifierExtensions.swift */; };
+		7687207025F09A85007494D7 /* CreateDeal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7687206F25F09A85007494D7 /* CreateDeal.swift */; };
 		76B9950B25EF4D420072ACE8 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 76B9950925EF4D420072ACE8 /* amplifyconfiguration.json */; };
 		76B9950C25EF4D420072ACE8 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 76B9950A25EF4D420072ACE8 /* awsconfiguration.json */; };
 		76DEE61625EF36AD003FC6C8 /* traveldealsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DEE61525EF36AD003FC6C8 /* traveldealsApp.swift */; };
 		76DEE61825EF36AD003FC6C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DEE61725EF36AD003FC6C8 /* ContentView.swift */; };
 		76DEE61A25EF36B1003FC6C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76DEE61925EF36B1003FC6C8 /* Assets.xcassets */; };
 		76DEE61D25EF36B1003FC6C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76DEE61C25EF36B1003FC6C8 /* Preview Assets.xcassets */; };
-		76EA927C25EF78B40099E42B /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EA927925EF78B40099E42B /* AmplifyModels.swift */; };
-		76EA927D25EF78B40099E42B /* Deal+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EA927A25EF78B40099E42B /* Deal+Schema.swift */; };
-		76EA927E25EF78B40099E42B /* Deal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EA927B25EF78B40099E42B /* Deal.swift */; };
+		7956A984FE8D4E749675EE0A /* Deal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9261A5D45C0B4CC48D6541FB /* Deal.swift */; };
 		B4F685355A68728AD89A80C0 /* Pods_traveldeals.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 326404F3552A03CBA96D73B1 /* Pods_traveldeals.framework */; };
+		E2567ED9FA924D05820CCE47 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9E48EA69004794A7CC61FE /* AmplifyModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		185140267F3AC3D1E3051DA1 /* Pods-traveldeals.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-traveldeals.release.xcconfig"; path = "Target Support Files/Pods-traveldeals/Pods-traveldeals.release.xcconfig"; sourceTree = "<group>"; };
 		2993BEEF19AB66BAFFD066F3 /* Pods-traveldeals.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-traveldeals.debug.xcconfig"; path = "Target Support Files/Pods-traveldeals/Pods-traveldeals.debug.xcconfig"; sourceTree = "<group>"; };
 		326404F3552A03CBA96D73B1 /* Pods_traveldeals.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_traveldeals.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3561A9C3598A4E4BBDCDBE29 /* Deal+Schema.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "Deal+Schema.swift"; path = "amplify/generated/models/Deal+Schema.swift"; sourceTree = "<group>"; };
 		76395B5725EF550A0043942F /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		76395B5825EF550A0043942F /* ConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationView.swift; sourceTree = "<group>"; };
 		76395B5925EF550B0043942F /* SessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionView.swift; sourceTree = "<group>"; };
 		76395B5A25EF550B0043942F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		76395B5B25EF550B0043942F /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		76395B6425EF56A30043942F /* PrettyModifierExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrettyModifierExtensions.swift; sourceTree = "<group>"; };
+		7687206F25F09A85007494D7 /* CreateDeal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDeal.swift; sourceTree = "<group>"; };
 		76B9950925EF4D420072ACE8 /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = SOURCE_ROOT; };
 		76B9950A25EF4D420072ACE8 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = SOURCE_ROOT; };
 		76DEE61225EF36AD003FC6C8 /* traveldeals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = traveldeals.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,9 +46,10 @@
 		76DEE61925EF36B1003FC6C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76DEE61C25EF36B1003FC6C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		76DEE61E25EF36B1003FC6C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		76EA927925EF78B40099E42B /* AmplifyModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmplifyModels.swift; sourceTree = "<group>"; };
-		76EA927A25EF78B40099E42B /* Deal+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Deal+Schema.swift"; sourceTree = "<group>"; };
-		76EA927B25EF78B40099E42B /* Deal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deal.swift; sourceTree = "<group>"; };
+		9261A5D45C0B4CC48D6541FB /* Deal.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = Deal.swift; path = amplify/generated/models/Deal.swift; sourceTree = "<group>"; };
+		9B8978401FE048748D450628 /* amplifytools.xcconfig */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.xcconfig; path = amplifytools.xcconfig; sourceTree = "<group>"; };
+		BE9E48EA69004794A7CC61FE /* AmplifyModels.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
+		DB43D43918154030A101964B /* schema.graphql */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text; name = schema.graphql; path = amplify/backend/api/traveldeals/schema.graphql; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,8 @@
 		76DEE60925EF36AD003FC6C8 = {
 			isa = PBXGroup;
 			children = (
+				91F1B5C6547F4FADA944B3B6 /* AmplifyModels */,
+				FC6AFD8291684F47B5646B97 /* AmplifyConfig */,
 				76DEE61425EF36AD003FC6C8 /* traveldeals */,
 				76DEE61325EF36AD003FC6C8 /* Products */,
 				C081016FDDFFAAD839D58EB1 /* Pods */,
@@ -89,7 +95,6 @@
 		76DEE61425EF36AD003FC6C8 /* traveldeals */ = {
 			isa = PBXGroup;
 			children = (
-				76EA927825EF78B40099E42B /* models */,
 				76B9950925EF4D420072ACE8 /* amplifyconfiguration.json */,
 				76B9950A25EF4D420072ACE8 /* awsconfiguration.json */,
 				76DEE61525EF36AD003FC6C8 /* traveldealsApp.swift */,
@@ -103,6 +108,7 @@
 				76DEE61925EF36B1003FC6C8 /* Assets.xcassets */,
 				76DEE61E25EF36B1003FC6C8 /* Info.plist */,
 				76DEE61B25EF36B1003FC6C8 /* Preview Content */,
+				7687206F25F09A85007494D7 /* CreateDeal.swift */,
 			);
 			path = traveldeals;
 			sourceTree = "<group>";
@@ -115,16 +121,16 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		76EA927825EF78B40099E42B /* models */ = {
+		91F1B5C6547F4FADA944B3B6 /* AmplifyModels */ = {
 			isa = PBXGroup;
 			children = (
-				76EA927925EF78B40099E42B /* AmplifyModels.swift */,
-				76EA927A25EF78B40099E42B /* Deal+Schema.swift */,
-				76EA927B25EF78B40099E42B /* Deal.swift */,
+				BE9E48EA69004794A7CC61FE /* AmplifyModels.swift */,
+				9261A5D45C0B4CC48D6541FB /* Deal.swift */,
+				3561A9C3598A4E4BBDCDBE29 /* Deal+Schema.swift */,
 			);
-			name = models;
-			path = amplify/generated/models;
-			sourceTree = SOURCE_ROOT;
+			name = AmplifyModels;
+			path = .;
+			sourceTree = "<group>";
 		};
 		C081016FDDFFAAD839D58EB1 /* Pods */ = {
 			isa = PBXGroup;
@@ -133,6 +139,16 @@
 				185140267F3AC3D1E3051DA1 /* Pods-traveldeals.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		FC6AFD8291684F47B5646B97 /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				9B8978401FE048748D450628 /* amplifytools.xcconfig */,
+				DB43D43918154030A101964B /* schema.graphql */,
+			);
+			name = AmplifyConfig;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,16 +267,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				76395B6525EF56A30043942F /* PrettyModifierExtensions.swift in Sources */,
+				7687207025F09A85007494D7 /* CreateDeal.swift in Sources */,
 				76395B5D25EF550B0043942F /* SignUpView.swift in Sources */,
-				76EA927E25EF78B40099E42B /* Deal.swift in Sources */,
 				76395B6025EF550B0043942F /* LoginView.swift in Sources */,
 				76395B5F25EF550B0043942F /* ConfirmationView.swift in Sources */,
-				76EA927C25EF78B40099E42B /* AmplifyModels.swift in Sources */,
 				76DEE61825EF36AD003FC6C8 /* ContentView.swift in Sources */,
-				76EA927D25EF78B40099E42B /* Deal+Schema.swift in Sources */,
 				76395B5C25EF550B0043942F /* SessionView.swift in Sources */,
 				76395B5E25EF550B0043942F /* SessionManager.swift in Sources */,
 				76DEE61625EF36AD003FC6C8 /* traveldealsApp.swift in Sources */,
+				E2567ED9FA924D05820CCE47 /* AmplifyModels.swift in Sources */,
+				7956A984FE8D4E749675EE0A /* Deal.swift in Sources */,
+				0E593A6FCE9044169738900D /* Deal+Schema.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

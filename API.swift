@@ -592,7 +592,7 @@ public struct ModelIDInput: GraphQLMapConvertible {
 
 public final class CreateDealMutation: GraphQLMutation {
   public static let operationString =
-    "mutation CreateDeal($input: CreateDealInput!, $condition: ModelDealConditionInput) {\n  createDeal(input: $input, condition: $condition) {\n    __typename\n    id\n    name\n    category\n    createdAt\n    updatedAt\n  }\n}"
+    "mutation CreateDeal($input: CreateDealInput!, $condition: ModelDealConditionInput) {\n  createDeal(input: $input, condition: $condition) {\n    __typename\n    id\n    name\n    category\n    createdAt\n    updatedAt\n    owner\n  }\n}"
 
   public var input: CreateDealInput
   public var condition: ModelDealConditionInput?
@@ -642,6 +642,7 @@ public final class CreateDealMutation: GraphQLMutation {
         GraphQLField("category", type: .nonNull(.scalar(String.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
+        GraphQLField("owner", type: .scalar(String.self)),
       ]
 
       public var snapshot: Snapshot
@@ -650,8 +651,8 @@ public final class CreateDealMutation: GraphQLMutation {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, name: String, category: String, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "Deal", "id": id, "name": name, "category": category, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, name: String, category: String, createdAt: String, updatedAt: String, owner: String? = nil) {
+        self.init(snapshot: ["__typename": "Deal", "id": id, "name": name, "category": category, "createdAt": createdAt, "updatedAt": updatedAt, "owner": owner])
       }
 
       public var __typename: String {
@@ -707,13 +708,22 @@ public final class CreateDealMutation: GraphQLMutation {
           snapshot.updateValue(newValue, forKey: "updatedAt")
         }
       }
+
+      public var owner: String? {
+        get {
+          return snapshot["owner"] as? String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "owner")
+        }
+      }
     }
   }
 }
 
 public final class UpdateDealMutation: GraphQLMutation {
   public static let operationString =
-    "mutation UpdateDeal($input: UpdateDealInput!, $condition: ModelDealConditionInput) {\n  updateDeal(input: $input, condition: $condition) {\n    __typename\n    id\n    name\n    category\n    createdAt\n    updatedAt\n  }\n}"
+    "mutation UpdateDeal($input: UpdateDealInput!, $condition: ModelDealConditionInput) {\n  updateDeal(input: $input, condition: $condition) {\n    __typename\n    id\n    name\n    category\n    createdAt\n    updatedAt\n    owner\n  }\n}"
 
   public var input: UpdateDealInput
   public var condition: ModelDealConditionInput?
@@ -763,6 +773,7 @@ public final class UpdateDealMutation: GraphQLMutation {
         GraphQLField("category", type: .nonNull(.scalar(String.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
+        GraphQLField("owner", type: .scalar(String.self)),
       ]
 
       public var snapshot: Snapshot
@@ -771,8 +782,8 @@ public final class UpdateDealMutation: GraphQLMutation {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, name: String, category: String, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "Deal", "id": id, "name": name, "category": category, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, name: String, category: String, createdAt: String, updatedAt: String, owner: String? = nil) {
+        self.init(snapshot: ["__typename": "Deal", "id": id, "name": name, "category": category, "createdAt": createdAt, "updatedAt": updatedAt, "owner": owner])
       }
 
       public var __typename: String {
@@ -828,13 +839,22 @@ public final class UpdateDealMutation: GraphQLMutation {
           snapshot.updateValue(newValue, forKey: "updatedAt")
         }
       }
+
+      public var owner: String? {
+        get {
+          return snapshot["owner"] as? String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "owner")
+        }
+      }
     }
   }
 }
 
 public final class DeleteDealMutation: GraphQLMutation {
   public static let operationString =
-    "mutation DeleteDeal($input: DeleteDealInput!, $condition: ModelDealConditionInput) {\n  deleteDeal(input: $input, condition: $condition) {\n    __typename\n    id\n    name\n    category\n    createdAt\n    updatedAt\n  }\n}"
+    "mutation DeleteDeal($input: DeleteDealInput!, $condition: ModelDealConditionInput) {\n  deleteDeal(input: $input, condition: $condition) {\n    __typename\n    id\n    name\n    category\n    createdAt\n    updatedAt\n    owner\n  }\n}"
 
   public var input: DeleteDealInput
   public var condition: ModelDealConditionInput?
@@ -884,6 +904,7 @@ public final class DeleteDealMutation: GraphQLMutation {
         GraphQLField("category", type: .nonNull(.scalar(String.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
+        GraphQLField("owner", type: .scalar(String.self)),
       ]
 
       public var snapshot: Snapshot
@@ -892,8 +913,8 @@ public final class DeleteDealMutation: GraphQLMutation {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, name: String, category: String, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "Deal", "id": id, "name": name, "category": category, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, name: String, category: String, createdAt: String, updatedAt: String, owner: String? = nil) {
+        self.init(snapshot: ["__typename": "Deal", "id": id, "name": name, "category": category, "createdAt": createdAt, "updatedAt": updatedAt, "owner": owner])
       }
 
       public var __typename: String {
@@ -949,13 +970,22 @@ public final class DeleteDealMutation: GraphQLMutation {
           snapshot.updateValue(newValue, forKey: "updatedAt")
         }
       }
+
+      public var owner: String? {
+        get {
+          return snapshot["owner"] as? String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "owner")
+        }
+      }
     }
   }
 }
 
 public final class GetDealQuery: GraphQLQuery {
   public static let operationString =
-    "query GetDeal($id: ID!) {\n  getDeal(id: $id) {\n    __typename\n    id\n    name\n    category\n    createdAt\n    updatedAt\n  }\n}"
+    "query GetDeal($id: ID!) {\n  getDeal(id: $id) {\n    __typename\n    id\n    name\n    category\n    createdAt\n    updatedAt\n    owner\n  }\n}"
 
   public var id: GraphQLID
 
@@ -1003,6 +1033,7 @@ public final class GetDealQuery: GraphQLQuery {
         GraphQLField("category", type: .nonNull(.scalar(String.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
+        GraphQLField("owner", type: .scalar(String.self)),
       ]
 
       public var snapshot: Snapshot
@@ -1011,8 +1042,8 @@ public final class GetDealQuery: GraphQLQuery {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, name: String, category: String, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "Deal", "id": id, "name": name, "category": category, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, name: String, category: String, createdAt: String, updatedAt: String, owner: String? = nil) {
+        self.init(snapshot: ["__typename": "Deal", "id": id, "name": name, "category": category, "createdAt": createdAt, "updatedAt": updatedAt, "owner": owner])
       }
 
       public var __typename: String {
@@ -1068,13 +1099,22 @@ public final class GetDealQuery: GraphQLQuery {
           snapshot.updateValue(newValue, forKey: "updatedAt")
         }
       }
+
+      public var owner: String? {
+        get {
+          return snapshot["owner"] as? String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "owner")
+        }
+      }
     }
   }
 }
 
 public final class ListDealsQuery: GraphQLQuery {
   public static let operationString =
-    "query ListDeals($filter: ModelDealFilterInput, $limit: Int, $nextToken: String) {\n  listDeals(filter: $filter, limit: $limit, nextToken: $nextToken) {\n    __typename\n    items {\n      __typename\n      id\n      name\n      category\n      createdAt\n      updatedAt\n    }\n    nextToken\n  }\n}"
+    "query ListDeals($filter: ModelDealFilterInput, $limit: Int, $nextToken: String) {\n  listDeals(filter: $filter, limit: $limit, nextToken: $nextToken) {\n    __typename\n    items {\n      __typename\n      id\n      name\n      category\n      createdAt\n      updatedAt\n      owner\n    }\n    nextToken\n  }\n}"
 
   public var filter: ModelDealFilterInput?
   public var limit: Int?
@@ -1172,6 +1212,7 @@ public final class ListDealsQuery: GraphQLQuery {
           GraphQLField("category", type: .nonNull(.scalar(String.self))),
           GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
           GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
+          GraphQLField("owner", type: .scalar(String.self)),
         ]
 
         public var snapshot: Snapshot
@@ -1180,8 +1221,8 @@ public final class ListDealsQuery: GraphQLQuery {
           self.snapshot = snapshot
         }
 
-        public init(id: GraphQLID, name: String, category: String, createdAt: String, updatedAt: String) {
-          self.init(snapshot: ["__typename": "Deal", "id": id, "name": name, "category": category, "createdAt": createdAt, "updatedAt": updatedAt])
+        public init(id: GraphQLID, name: String, category: String, createdAt: String, updatedAt: String, owner: String? = nil) {
+          self.init(snapshot: ["__typename": "Deal", "id": id, "name": name, "category": category, "createdAt": createdAt, "updatedAt": updatedAt, "owner": owner])
         }
 
         public var __typename: String {
@@ -1237,6 +1278,15 @@ public final class ListDealsQuery: GraphQLQuery {
             snapshot.updateValue(newValue, forKey: "updatedAt")
           }
         }
+
+        public var owner: String? {
+          get {
+            return snapshot["owner"] as? String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "owner")
+          }
+        }
       }
     }
   }
@@ -1244,7 +1294,7 @@ public final class ListDealsQuery: GraphQLQuery {
 
 public final class OnCreateDealSubscription: GraphQLSubscription {
   public static let operationString =
-    "subscription OnCreateDeal {\n  onCreateDeal {\n    __typename\n    id\n    name\n    category\n    createdAt\n    updatedAt\n  }\n}"
+    "subscription OnCreateDeal {\n  onCreateDeal {\n    __typename\n    id\n    name\n    category\n    createdAt\n    updatedAt\n    owner\n  }\n}"
 
   public init() {
   }
@@ -1285,6 +1335,7 @@ public final class OnCreateDealSubscription: GraphQLSubscription {
         GraphQLField("category", type: .nonNull(.scalar(String.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
+        GraphQLField("owner", type: .scalar(String.self)),
       ]
 
       public var snapshot: Snapshot
@@ -1293,8 +1344,8 @@ public final class OnCreateDealSubscription: GraphQLSubscription {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, name: String, category: String, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "Deal", "id": id, "name": name, "category": category, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, name: String, category: String, createdAt: String, updatedAt: String, owner: String? = nil) {
+        self.init(snapshot: ["__typename": "Deal", "id": id, "name": name, "category": category, "createdAt": createdAt, "updatedAt": updatedAt, "owner": owner])
       }
 
       public var __typename: String {
@@ -1350,13 +1401,22 @@ public final class OnCreateDealSubscription: GraphQLSubscription {
           snapshot.updateValue(newValue, forKey: "updatedAt")
         }
       }
+
+      public var owner: String? {
+        get {
+          return snapshot["owner"] as? String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "owner")
+        }
+      }
     }
   }
 }
 
 public final class OnUpdateDealSubscription: GraphQLSubscription {
   public static let operationString =
-    "subscription OnUpdateDeal {\n  onUpdateDeal {\n    __typename\n    id\n    name\n    category\n    createdAt\n    updatedAt\n  }\n}"
+    "subscription OnUpdateDeal {\n  onUpdateDeal {\n    __typename\n    id\n    name\n    category\n    createdAt\n    updatedAt\n    owner\n  }\n}"
 
   public init() {
   }
@@ -1397,6 +1457,7 @@ public final class OnUpdateDealSubscription: GraphQLSubscription {
         GraphQLField("category", type: .nonNull(.scalar(String.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
+        GraphQLField("owner", type: .scalar(String.self)),
       ]
 
       public var snapshot: Snapshot
@@ -1405,8 +1466,8 @@ public final class OnUpdateDealSubscription: GraphQLSubscription {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, name: String, category: String, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "Deal", "id": id, "name": name, "category": category, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, name: String, category: String, createdAt: String, updatedAt: String, owner: String? = nil) {
+        self.init(snapshot: ["__typename": "Deal", "id": id, "name": name, "category": category, "createdAt": createdAt, "updatedAt": updatedAt, "owner": owner])
       }
 
       public var __typename: String {
@@ -1462,13 +1523,22 @@ public final class OnUpdateDealSubscription: GraphQLSubscription {
           snapshot.updateValue(newValue, forKey: "updatedAt")
         }
       }
+
+      public var owner: String? {
+        get {
+          return snapshot["owner"] as? String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "owner")
+        }
+      }
     }
   }
 }
 
 public final class OnDeleteDealSubscription: GraphQLSubscription {
   public static let operationString =
-    "subscription OnDeleteDeal {\n  onDeleteDeal {\n    __typename\n    id\n    name\n    category\n    createdAt\n    updatedAt\n  }\n}"
+    "subscription OnDeleteDeal {\n  onDeleteDeal {\n    __typename\n    id\n    name\n    category\n    createdAt\n    updatedAt\n    owner\n  }\n}"
 
   public init() {
   }
@@ -1509,6 +1579,7 @@ public final class OnDeleteDealSubscription: GraphQLSubscription {
         GraphQLField("category", type: .nonNull(.scalar(String.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
+        GraphQLField("owner", type: .scalar(String.self)),
       ]
 
       public var snapshot: Snapshot
@@ -1517,8 +1588,8 @@ public final class OnDeleteDealSubscription: GraphQLSubscription {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, name: String, category: String, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "Deal", "id": id, "name": name, "category": category, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, name: String, category: String, createdAt: String, updatedAt: String, owner: String? = nil) {
+        self.init(snapshot: ["__typename": "Deal", "id": id, "name": name, "category": category, "createdAt": createdAt, "updatedAt": updatedAt, "owner": owner])
       }
 
       public var __typename: String {
@@ -1572,6 +1643,15 @@ public final class OnDeleteDealSubscription: GraphQLSubscription {
         }
         set {
           snapshot.updateValue(newValue, forKey: "updatedAt")
+        }
+      }
+
+      public var owner: String? {
+        get {
+          return snapshot["owner"] as? String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "owner")
         }
       }
     }

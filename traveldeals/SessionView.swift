@@ -12,6 +12,8 @@ struct SessionView: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
+    @State private var showModal = false
+    
     let user: AuthUser
     
     var body: some View {
@@ -24,7 +26,14 @@ struct SessionView: View {
                     Button("Sign Out", action: sessionManager.signOut).padding()
                 }
                 Spacer()
-                Button("Create new deal", action: sessionManager.signOut).pretty()
+                Button("Create new deal") {
+                    self.showModal.toggle()
+                }
+                .pretty()
+                .sheet(isPresented: $showModal, content: {
+                    CreateDeal(showModal:$showModal)
+                })
+                
             }
         }
     }
