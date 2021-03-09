@@ -46,7 +46,10 @@ struct traveldealsApp: App {
             let dataStorePlugin = AWSDataStorePlugin(modelRegistration: models)
             try Amplify.add(plugin: dataStorePlugin)
             try Amplify.add(plugin: AWSAPIPlugin())
-                        
+            
+            //analytics
+            try Amplify.add(plugin: AWSPinpointAnalyticsPlugin())
+            
             //configure plugins
             try Amplify.configure()
             print("Amplify succesfully configured")

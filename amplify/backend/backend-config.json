@@ -23,5 +23,11 @@
         }
       }
     }
+  },
+  "analytics": {
+    "traveldeals": {
+      "service": "Pinpoint",
+      "providerPlugin": "awscloudformation"
+    }
   }
 }

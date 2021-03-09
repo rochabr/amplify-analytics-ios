@@ -1,6 +1,6 @@
 {
     "identityPoolName": "traveldeals15a3eddc_identitypool_15a3eddc",
-    "allowUnauthenticatedIdentities": false,
+    "allowUnauthenticatedIdentities": true,
     "resourceNameTruncated": "travel15a3eddc",
     "userPoolName": "traveldeals15a3eddc_userpool_15a3eddc",
     "autoVerifiedAttributes": [

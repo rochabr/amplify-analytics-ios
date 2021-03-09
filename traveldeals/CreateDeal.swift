@@ -69,7 +69,17 @@ struct CreateDeal: View {
                     save()
                 }).pretty()
             }
+        }.onAppear(){
+            recordEvent()
         }
+    }
+    
+    func recordEvent() {
+//        let properties: AnalyticsProperties = [
+//            "eventPropertyStringKey": "createDeal-start"
+//        ]
+        let event = BasicAnalyticsEvent(name: "createDeal-start")
+        Amplify.Analytics.record(event: event)
     }
     
     func save(){
