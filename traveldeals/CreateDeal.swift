@@ -16,6 +16,7 @@ struct CreateDeal: View {
     @State private var selectedCategory = 0
     
     @Binding var showModal: Bool
+    @Binding var deals: Array<Deal>
     
     @State var name = ""
     @State var category = ""
@@ -68,51 +69,26 @@ struct CreateDeal: View {
                     save()
                 }).pretty()
             }
-            
         }
     }
-    
     
     func save(){
         
         let deal = Deal(
             name: name,
             category: categories[selectedCategory]
-           // owner: Amplify.Auth.getCurrentUser()?.username
         )
         
-        // 3
-        _ = Amplify.API.mutate(request: .create(deal)) { event in
-          switch event {
-          // 4
-          case .failure(let error):
-            print("Failed to save entry ", error)
-          case .success(let result):
-            switch result {
-            case .failure(let error):
-                print("Failed to save entry ", error)
+        Amplify.DataStore.save(deal) {
+            switch $0 {
             case .success(let deal):
-              // 5
-                print("Saved deal: ", deal)
+                print("Added post with id: \(deal.id)")
+                deals.append(deal)
                 self.showModal.toggle()
+            case .failure(let error):
+                print("Error adding deal with Error: \(error.localizedDescription)")
             }
-          }
         }
-        
-//        Amplify.DataStore.save(deal){ result in
-//            switch result {
-//            case .success:
-//                print("Saved entry")
-//                self.showModal.toggle()
-//            case .failure(let error):
-//                print("Failed to save entry ", error)
-//            }
-//        }
     }
 }
 
-struct ModalView_Previews: PreviewProvider {
-    static var previews: some View {
-        CreateDeal(showModal: .constant(true))
-    }
-}

@@ -41,10 +41,12 @@ struct traveldealsApp: App {
             //Auth
             try Amplify.add(plugin:AWSCognitoAuthPlugin())
 
-            //API
-            //let models = AmplifyModels()
-            try Amplify.add(plugin:AWSAPIPlugin(modelRegistration: AmplifyModels()))
-            
+            //DataStore
+            let models = AmplifyModels()
+            let dataStorePlugin = AWSDataStorePlugin(modelRegistration: models)
+            try Amplify.add(plugin: dataStorePlugin)
+            try Amplify.add(plugin: AWSAPIPlugin())
+                        
             //configure plugins
             try Amplify.configure()
             print("Amplify succesfully configured")

@@ -2,7 +2,7 @@
 import Amplify
 import Foundation
 
-public struct Deal: Model {
+public struct Deal: Model, Identifiable {
   public let id: String
   public var name: String
   public var category: String
