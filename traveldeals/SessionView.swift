@@ -56,6 +56,9 @@ struct SessionView: View {
             
             Spacer()
             Button("Create new deal") {
+                let event = BasicAnalyticsEvent(name: "createDeal-start")
+                Amplify.Analytics.record(event: event)
+                
                 self.showModal.toggle()
             }
             .pretty()

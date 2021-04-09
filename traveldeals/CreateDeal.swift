@@ -69,16 +69,14 @@ struct CreateDeal: View {
                     save()
                 }).pretty()
             }
-        }.onAppear(){
-            recordEvent()
         }
     }
     
-    func recordEvent() {
-//        let properties: AnalyticsProperties = [
-//            "eventPropertyStringKey": "createDeal-start"
-//        ]
-        let event = BasicAnalyticsEvent(name: "createDeal-start")
+    func recordEvent(category: String) {
+        let properties: AnalyticsProperties = [
+               "category": category
+           ]
+        let event = BasicAnalyticsEvent(name: "createDeal-complete", properties: properties)
         Amplify.Analytics.record(event: event)
     }
     
@@ -93,6 +91,8 @@ struct CreateDeal: View {
             switch $0 {
             case .success(let deal):
                 print("Added post with id: \(deal.id)")
+                recordEvent(category: deal.category)
+                
                 deals.append(deal)
                 self.showModal.toggle()
             case .failure(let error):

@@ -119,7 +119,17 @@ final class SessionManager : ObservableObject {
                 DispatchQueue.main.async {
                     self?.getCurrentAuthUser()
                 }
-
+                
+                //Clear local data
+                Amplify.DataStore.clear() { result in
+                        switch result {
+                        case .success:
+                            print("Local data cleared successfully.")
+                        case .failure(let error):
+                            print("Local data not cleared \(error)")
+                        }
+                }
+                
             case .failure(let error):
                 print("sign out error: ", error)
             }
