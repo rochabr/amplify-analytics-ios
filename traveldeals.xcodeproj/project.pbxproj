@@ -37,6 +37,7 @@
 		76395B5A25EF550B0043942F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		76395B5B25EF550B0043942F /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		76395B6425EF56A30043942F /* PrettyModifierExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrettyModifierExtensions.swift; sourceTree = "<group>"; };
+		765FC37526290F0200F14124 /* traveldeals.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = traveldeals.entitlements; sourceTree = "<group>"; };
 		7687206F25F09A85007494D7 /* CreateDeal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDeal.swift; sourceTree = "<group>"; };
 		76B9950925EF4D420072ACE8 /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = SOURCE_ROOT; };
 		76B9950A25EF4D420072ACE8 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = SOURCE_ROOT; };
@@ -95,6 +96,7 @@
 		76DEE61425EF36AD003FC6C8 /* traveldeals */ = {
 			isa = PBXGroup;
 			children = (
+				765FC37526290F0200F14124 /* traveldeals.entitlements */,
 				76B9950925EF4D420072ACE8 /* amplifyconfiguration.json */,
 				76B9950A25EF4D420072ACE8 /* awsconfiguration.json */,
 				76DEE61525EF36AD003FC6C8 /* traveldealsApp.swift */,
@@ -406,6 +408,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = traveldeals/traveldeals.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"traveldeals/Preview Content\"";
 				DEVELOPMENT_TEAM = C9FVQFAP43;
@@ -419,7 +422,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tfc.traveldeals;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -429,6 +432,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = traveldeals/traveldeals.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"traveldeals/Preview Content\"";
 				DEVELOPMENT_TEAM = C9FVQFAP43;
@@ -442,7 +446,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tfc.traveldeals;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
